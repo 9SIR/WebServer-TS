@@ -1,0 +1,8 @@
+# Compile output directory
+dist
+
+# VSCode project config directory
+.vscode
+
+# Node Modules directory
+node_modules

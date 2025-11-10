@@ -1,0 +1,42 @@
+[server.http]
+ip = '127.0.0.1'
+port = 18080
+
+[syslog]
+rootdir = '/tmp'
+subdir  = 'uWebSockets.ts'
+logname = 'web-server.log'
+
+[redpanda]
+ip = '127.0.0.1'
+port = '9092'
+
+# Redpanda client1
+[redpanda.agent.client1]
+id = 'atcmd_transfer'
+
+# Topic: atcmd_from_web
+[redpanda.topic.atcmd_from_web]
+name = 'atcmd_from_web'
+
+# Consumer group: group1
+[redpanda.consumer.group1]
+id = 'atcmd_from_web'
+
+
+[db.redis]
+host = '127.0.0.1'
+port = '6379'
+db = 0
+user = ''
+password = ''
+
+[db.mysql]
+host = '127.0.0.1'
+port = 3306
+user = 'root'
+password = 'qx.123'
+dbname = 'qx_data'
+connect_limit = 4
+maxidle = 0
+idle_timeout = 1000

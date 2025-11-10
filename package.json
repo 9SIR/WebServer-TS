@@ -1,0 +1,35 @@
+{
+	"name": "WebServer-TS",
+	"version": "0.0.1",
+	"author": "JoHoper",
+	"description": "Web Server base on uWebSockets.js Library",
+	"main": "src/server.ts",
+	"type": "module",
+	"license": "GPL-3.0",
+	"scripts": {
+		"build": "tsup",
+		"start": "node dist/server.js",
+		"dev": "nodemon --watch src --exec node --import tsx src/server.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/9SIR/WebServer-TS.git"
+	},
+	"dependencies": {
+		"ioredis": "^5.7.0",
+		"kafkajs": "^2.2.4",
+		"mysql2": "^3.14.3",
+		"pino": "^9.8.0",
+		"postgres": "^3.4.7",
+		"smol-toml": "^1.4.2",
+		"undici": "^7.13.0",
+		"uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.52.0"
+	},
+	"devDependencies": {
+		"@types/node": "^24.2.1",
+		"nodemon": "^3.1.10",
+		"tsup": "^8.5.0",
+		"tsx": "^4.20.4",
+		"typescript": "^5.9.2"
+	}
+}
