@@ -2,7 +2,7 @@ import uWS from 'uWebSockets.js';
 import { logger } from './utils/logger.js';
 import { config } from './utils/toml_parser.js';
 
-
+/* New uWebSocket Object */
 const app = uWS.App();
 
 app.get('/testing/ping', (res, req) => {
